@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>The Aroma Lab | Luxury Attars</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>The Aroma Lab | Luxury Attars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-<style>
+  <style>
 :root{
 --bg:#0e0e0e;
 --gold:#c9a44c;
 --panel:#1b1f24;
-}
+    }
 
 body{
 margin:0;
 background:var(--bg);
 color:#fff;
 font-family:Poppins,Arial;
-}
+    }
 
-/* NAVBAR */
+    /* NAVBAR */
 .navbar{
 background:#000;
-}
+    }
 .navbar-brand{
 color:var(--gold)!important;
 font-weight:700;
 letter-spacing:1px;
-}
+    }
 
-/* Hamburger animation */
+    /* Hamburger animation */
 .navbar-toggler{
 border:none;
 outline:none;
-}
+    }
 .navbar-toggler span{
 display:block;
 width:25px;
@@ -44,35 +44,56 @@ height:3px;
 background:#fff;
 margin:5px 0;
 transition:.4s;
-}
+    }
 .navbar-toggler.active span:nth-child(1){
 transform:rotate(45deg) translate(5px,5px);
-}
+    }
 .navbar-toggler.active span:nth-child(2){
 opacity:0;
-}
+    }
 .navbar-toggler.active span:nth-child(3){
 transform:rotate(-45deg) translate(6px,-6px);
-}
+    }
 
-/* HERO */
+    /* HERO */
 .hero{
 height:80vh;
 background:
 linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-url("https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd");
+url("assets/banner7.png");
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
 text-align:center;
 }
+
+
+/* .hero{
+    min-height:70vh;
+    height:auto;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.75)
+    ),
+    url("assets/banner1.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+} */
+
 .hero h1{
 color:var(--gold);
 font-size:3rem;
-}
+    }
 
-/* PRODUCT CARD */
+
 .product-card{
 background:#fff;
 color:#000;
@@ -82,28 +103,28 @@ box-shadow:
 0 8px 20px rgba(0,0,0,.4),
 inset 0 1px 0 rgba(255,255,255,.4);
 transition:.35s;
-}
+    }
 .product-card:hover{
 transform:translateY(-6px);
 box-shadow:0 15px 35px rgba(0,0,0,.6);
-}
+    }
 .product-card img{
 height:240px;
 width:100%;
 object-fit:cover;
-}
+    }
 .price{
 font-weight:600;
 margin-bottom:10px;
-}
+    }
 
-/* Quantity control */
+    /* Quantity control */
 .qty-control{
 display:flex;
 justify-content:center;
 align-items:center;
 gap:12px;
-}
+    }
 .qty-btn{
 width:34px;
 height:34px;
@@ -112,9 +133,9 @@ border:none;
 background:#000;
 color:#fff;
 font-size:18px;
-}
+    }
 
-/* CART PANEL */
+    /* CART PANEL */
 #cartBox{
 display:none;
 position:fixed;
@@ -125,119 +146,121 @@ background:var(--panel);
 border-radius:18px;
 padding:15px;
 z-index:9999;
-}
+    }
 .cart-title{
 color:var(--gold);
 font-weight:600;
 display:flex;
 justify-content:space-between;
 align-items:center;
-}
+    }
 .cart-close{
 cursor:pointer;
 font-size:18px;
-}
+    }
 
-/* MOBILE */
+    /* MOBILE */
 @media(max-width:576px){
 #cartBox{
 width:92%;
 left:4%;
 right:auto;
-}
-}
+      }
+    }
 
-/* FOOTER */
+    /* FOOTER */
 footer{
 background:#000;
 padding:40px 0;
 margin-top:80px;
-}
+    }
 footer h5{
 color:var(--gold);
-}
+    }
 .footer-icons a{
 color:var(--gold);
 font-size:22px;
 margin:0 12px;
 transition:.3s;
-}
+    }
 .footer-icons a:hover{
 transform:scale(1.2);
-}
-</style>
+    }
+
+    
+  </style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top">
 <div class="container">
-<a class="navbar-brand" href="#">THE AROMA LAB</a>
+<a class="navbar-brand" href="index.html">THE AROMA LAB</a>
 <button class="navbar-toggler" onclick="toggleMenu(this)" data-bs-toggle="collapse" data-bs-target="#nav">
 <span></span><span></span><span></span>
 </button>
-<div class="collapse navbar-collapse" id="nav">
-<div class="collapse navbar-collapse" id="nav">
-  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="nav">
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
     <li class="nav-item">
       <a class="nav-link text-white" href="about.html">About Us</a>
     </li>
-  </ul>
-</div>
+          </ul>
+        </div>
 
-</div>
-</div>
+      </div>
+    </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-<div class="container">
-<h1>Luxury Attars for Royal Souls</h1>
-<p>Pure • Long Lasting • Alcohol Free</p>
-</div>
+  <section class="hero">
+    <div class="container">
+      <h1>Luxury Attars for Royal Souls</h1>
+      <p>Pure • Long Lasting • Alcohol Free</p>
+    </div>
 </section>
 
 <!-- PRODUCTS -->
-<section class="container my-5">
-<div class="row g-4" id="productList"></div>
+  <section class="container my-5">
+    <div class="row g-4" id="productList"></div>
 </section>
 
 <!-- CART -->
-<div id="cartBox">
+  <div id="cartBox">
 <div class="cart-title">
 <span>🛒 Your Order</span>
 <span class="cart-close" onclick="closeCart()">✖</span>
 </div>
-<div id="cartItems" class="mt-2"></div>
+    <div id="cartItems" class="mt-2"></div>
 <div class="mt-2">Subtotal: ₹<span id="subtotal">0</span></div>
 <button class="btn btn-outline-warning w-100 mt-2" onclick="sendWhatsApp()">Order on WhatsApp</button>
 </div>
 
 <!-- FOOTER -->
-<footer>
-<div class="container text-center">
-<h5>The Aroma Lab</h5>
-<p>Premium handcrafted attars</p>
+  <footer>
+    <div class="container text-center">
+      <h5>The Aroma Lab</h5>
+      <p>Premium handcrafted attars</p>
 <div class="footer-icons">
 <a href="mailto:yourgmail@gmail.com"><i class="fa-solid fa-envelope"></i></a>
 <a href="https://instagram.com/yourinsta" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 <a href="https://wa.me/8750324771" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 </div>
-</div>
-</footer>
+    </div>
+  </footer>
 
 <script>
 const WHATSAPP_NUMBER = "918750324771";
 
 const products=[
-{id:1,name:"Ocean Breeze",price:300,img:"https://images.unsplash.com/photo-1585386959984-a4155224a1fa"},
-{id:2,name:"Arabian Oud",price:550,img:"https://images.unsplash.com/photo-1600180758890-6b94519a8ba6"},
-{id:3,name:"Sandalwood",price:400,img:"https://images.unsplash.com/photo-1598514982470-1d1d16b97d19"},
-{id:4,name:"Vanilla Bliss",price:350,img:"https://images.unsplash.com/photo-1509042239860-f550ce710b93"},
-{id:5,name:"Coffee Rush",price:320,img:"https://images.unsplash.com/photo-1587049352846-4a222e7847c1"},
-{id:6,name:"Magnetic",price:450,img:"https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae"},
-{id:7,name:"Royal Musk",price:500,img:"https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd"}
+{id:1,name:"Ocean Breeze",price:300,img:"assets/ocean breeze.png"},
+{id:2,name:"Arabian Oud",price:550,img:"assets/arabian oud 2.png"},
+{id:3,name:"Sandalwood",price:400,img:"assets/sandalwood.png"},
+{id:4,name:"Vanilla",price:350,img:"assets/vanila.png"},
+{id:5,name:"Coffee",price:320,img:"assets/coffee.png"},
+{id:6,name:"Magnetic",price:450,img:"assets/ magnatic2.png"},
+// {id:7,name:"Royal Musk",price:500,img:"https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd"}
 ];
 
 let cart={};
@@ -251,10 +274,15 @@ html+=`
 <img src="${p.img}">
 <div class="p-3 text-center">
 <h5>${p.name}</h5>
-<div class="price">₹${p.price}</div>
+<div class="price">
+₹${p.price} <br>
+<small>Total: ₹<span id="total_${p.id}">0</span></small>
+</div>
+
 <div id="action_${p.id}">
 <button class="btn btn-dark w-100" onclick="addToCart(${p.id})">Add to Cart</button>
 </div>
+
 </div>
 </div>
 </div>`;
@@ -265,28 +293,43 @@ document.getElementById("productList").innerHTML=html;
 function addToCart(id){
 cart[id]=1;
 document.getElementById("cartBox").style.display="block";
+
+let product = products.find(p=>p.id==id);
+document.getElementById("total_"+id).innerText = product.price;
+
 updateQty(id);
 renderCart();
+
 }
 
 function updateQty(id){
 document.getElementById("action_"+id).innerHTML=`
 <div class="qty-control">
 <button class="qty-btn" onclick="changeQty(${id},-1)">−</button>
-<span>${cart[id]}</span>
+<span id="qty_${id}">${cart[id]}</span>
 <button class="qty-btn" onclick="changeQty(${id},1)">+</button>
 </div>`;
 }
 
+
 function changeQty(id,val){
 cart[id]+=val;
+
+let product = products.find(p=>p.id==id);
+
 if(cart[id]<=0){
 delete cart[id];
 document.getElementById("action_"+id).innerHTML=
 `<button class="btn btn-dark w-100" onclick="addToCart(${id})">Add to Cart</button>`;
+document.getElementById("total_"+id).innerText = 0;
+}else{
+document.getElementById("qty_"+id).innerText = cart[id];
+document.getElementById("total_"+id).innerText = cart[id] * product.price;
 }
+
 renderCart();
 }
+
 
 function renderCart(){
 let html="",total=0;
@@ -325,6 +368,6 @@ btn.classList.toggle("active");
 renderProducts();
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
